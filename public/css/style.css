@@ -1,0 +1,194 @@
+:root {
+	--dark-color-a: #238bc7;
+	--dark-color-b: #2db2ff;
+	--light-color: #99ceff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+} 
+
+* {
+	box-sizing: border-box;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+	background-image: url("bg3.jpg");
+	background-size: 100%;
+	margin: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	width: 75px;
+    height: 40px;
+    font-size: medium;
+    border-radius: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+	font-family:'Franklin Gothic', sans-serif;
+    align-items: center;
+}
+
+/* Tweet Page */
+
+.twt-container {
+	max-width: 1400px;
+	background-color: #238bc7;
+	margin: 30px auto;
+	border-top-right-radius: 14px;
+	border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+	overflow: hidden;
+}
+
+.twt-header {
+	background-color: #238bc7;
+	color: #fff;
+	padding: 15px;
+	margin: 10px;
+	border-top-right-radius: 14px;
+	border-top-left-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.twt-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.twt-messages {
+	padding: 10px;
+	background-color: #238bc7;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.twt-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.twt-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.twt-messages .message .meta span {
+	color: #777;
+}
+
+.twt-form-container {
+	padding: 20px 30px;
+	background-color: var(--dark-color-a);
+}
+
+.twt-form-container form {
+	display: flex;
+}
+
+.twt-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+/* Join Page */
+
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+#username {
+	font-size: 17px;
+	width: 100%;
+	height:40px;
+}
+
+#password {
+	font-size: 17px;
+	width: 100%;
+	height:40px;
+}
+
+#room {
+	font-size: 17px;
+	width: 100%;
+	height:40px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.twt-main {
+		display: block;
+	}
+
+}

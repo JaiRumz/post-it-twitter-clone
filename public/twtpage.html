@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Post-It!</title>
+</head>
+<body>
+  <div class="twt-container">
+    <header class="twt-header">
+      <h1>Post-It!</h1>
+      <a href="/login" class="btn">Log Out</a>
+    </header>
+   
+    <div class="twt-form-container">
+      <form id="twt-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Write Your Thoughts..."
+          required
+          autocomplete="off"
+        />
+        <button class="btn">Post</button>
+        
+      </form>
+    </div>
+      <div class="twt-messages">
+        <main class="twt-main"></main>	
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha512-f0AM6x08kthGzMyDHZjBgjBCPp8V8ovlHYCI1jMkhViTeX3MykGCf/DnN1khWss/6d1105eAG4TniSKy6UhZrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

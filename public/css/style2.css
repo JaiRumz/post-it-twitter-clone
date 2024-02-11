@@ -1,0 +1,23 @@
+.like-button{
+    width: 75px;
+    height: 40px;
+    font-size: medium;
+    border-radius: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    background-color: #2db2ff;
+	font-family:'Franklin Gothic', sans-serif;
+    align-items: center;
+}
+
+.dislike-button{
+    width: 75px;
+    height: 40px;
+    font-size: medium;
+    border-radius: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    background-color: #2db2ff;
+	font-family:'Franklin Gothic', sans-serif;
+    align-items: center;
+}
